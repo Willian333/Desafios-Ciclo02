@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="meAcha.css">
+    <script src="meAcha.js"></script>
+    <title>ME ACHA! - BUSCA DE ENDEREÇO</title>
+</head>
+<body>
+    <header>
+        <h1 class="flex">ME ACHA!</h1>
+        <h2 class="flex">ENCONTRE UM ENDEREÇO PELO NÚMERO DO CEP</h2>
+    </header>
+    <main>
+       <span>
+           <div id="div1">
+               <span class="material-icons flex">
+            travel_explore</span>
+            </div>
+        </span>
+
+        <form id="pai" method="GET">
+            <label for="cep">Cep</label>
+            <input class="txt" type="text" id="cep" maxlength="8" placeholder="Digite um CEP válido."> 
+            <label for="ruaUsu">Rua</label>
+            <input class="txt" type="text" id="logradouro" disabled>
+            <label for="bairroUsu">Bairro</label>
+            <input class="txt" type="text" id="bairro" disabled>
+            <label for="cidadeUsu">Cidade</label>
+            <input class="txt" type="text" id="localidade" disabled>
+            <label for="estadoUsu">Estado</label>
+            <input class="txt" type="text" id="uf" disabled>
+            <input id="buscarCep" class="txt" type="button" name="enviarDados" value="BUSCAR">
+        </form>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
